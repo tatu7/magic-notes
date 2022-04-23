@@ -1,0 +1,45 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.4rem;
+  height: auto;
+  padding: 1.4rem;
+}
+.card {
+  background-color: #00b073;
+  width: 100%;
+  border-radius: 0.8rem;
+  height: 30rem;
+  &--input {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    outline: none;
+    width: 100%;
+    height: auto;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    resize: none;
+  }
+  &--footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    padding: 0 1.4rem;
+  }
+  &--limit {
+    color: aliceblue;
+  }
+  &--button {
+    background-color: azure;
+    padding: 0.6rem 1.5rem;
+    border-radius: 1rem;
+    border: 3px solid green;
+    cursor: pointer;
+  }
+  &--delete-btn {
+    color: red;
+    cursor: pointer;
+  }
+}
