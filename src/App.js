@@ -7,6 +7,7 @@ function App() {
   const [theme, setTheme] = useState(true);
   const [element, setElement] = useState({ title: "", limit: 300, id: 0 });
   const [arr, setArr] = useState([]);
+
   return (
     <div className="App" style={{ backgroundColor: theme ? "white" : "black" }}>
       <Navbar theme={theme} setTheme={setTheme} />

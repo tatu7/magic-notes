@@ -1,5 +1,5 @@
 function CreaterCard(props) {
-  const { writeElement, element, addElement, initial } = props;
+  const { writeElement, element, addElement } = props;
 
   return (
     <div className="card " style={{ backgroundColor: "crimson" }}>
@@ -9,7 +9,6 @@ function CreaterCard(props) {
         rows="10"
         className="card--input"
         placeholder="This is my second note"
-        defaultValue={initial}
       ></textarea>
       <div className="card--footer">
         <p className="card--limit">{element.limit}/300 Remaining</p>

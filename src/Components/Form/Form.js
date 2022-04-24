@@ -7,7 +7,7 @@ function Form(props) {
   const searchElement = function (evt) {
     const regex = new RegExp(evt.target.value, "gi");
     const searchEl = arr.filter((film) => film.title.match(regex));
-    if (evt.target.value) {
+    if (evt.target.value !== "") {
       setArr([...searchEl]);
     } else {
       setArr([...arr]);

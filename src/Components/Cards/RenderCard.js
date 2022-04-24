@@ -12,7 +12,7 @@ function RenderCard(props) {
               onInput={props.writeElement}
               cols="30"
               rows="10"
-              className="card--input"
+              className="card--input-2"
               value={val.title}
             ></textarea>
             <div className="card--footer">

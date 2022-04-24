@@ -22,6 +22,18 @@
     padding: 1.2rem;
     resize: none;
   }
+  &--input-2 {
+    background-color: transparent;
+    border: none;
+    color: aliceblue;
+    outline: none;
+    width: 100%;
+    height: auto;
+    margin-top: 0.6rem;
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    resize: none;
+  }
   &--footer {
     display: flex;
     justify-content: space-between;
@@ -41,5 +53,8 @@
   &--delete-btn {
     color: red;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
   }
 }

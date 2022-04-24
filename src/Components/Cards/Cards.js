@@ -2,10 +2,8 @@ import "./card.scss";
 import "../../main.scss";
 import CreaterCard from "./createrCard";
 import RenderCard from "./RenderCard";
-import { useState } from "react";
 
 function Cards(props) {
-  const [initial, setInitial] = useState("");
   const { element, setElement, arr, setArr } = props;
 
   let idTemplate;
@@ -18,8 +16,8 @@ function Cards(props) {
   };
   /////////////////////////////////////////
   const addElement = function () {
-    setInitial("");
     setArr([...arr, element]);
+    document.querySelector(".card--input").value = "";
   };
   //////////////////////////////////////
   const deleteFunc = (evt) => {
@@ -31,7 +29,6 @@ function Cards(props) {
     arr.splice(topilgan, 1);
     setArr([...arr]);
   };
-
   ////////////////////////////////////////
   return (
     <div className="container">
@@ -40,7 +37,6 @@ function Cards(props) {
           writeElement={writeElement}
           element={element}
           addElement={addElement}
-          initial={initial}
         />
         <RenderCard
           writeElement={writeElement}
